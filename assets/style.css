@@ -63,6 +63,20 @@ label {
     justify-content: space-evenly;
 }
 
+#marcarTodas {
+    display: none;
+    width: 7vh;
+}
+
+#desmarcarTodas {
+    display: none;
+    width: 7vh;
+}
+
+#limpar {
+    display: none;
+}
+
 .ticarTarefa {
     text-decoration: line-through;
     color: gray;
@@ -105,6 +119,10 @@ label {
 
 #tarefas li:hover {
     background-color: #b97af857;
+}
+
+#tarefas li:active {
+    cursor: grabbing;
 }
 
 #btn:hover {
