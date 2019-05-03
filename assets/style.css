@@ -1,0 +1,119 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(90deg, #e0c3fc, #8ec5fc);
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 10px;
+    margin-bottom: 0;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.671);
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.escrever {
+    display: flex;
+    flex-direction: column;
+}
+
+#btn {
+    width: 100%;
+    color: white;
+    background-color: #ba7af8;
+    padding: 12px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    word-break: break-all;
+    border-radius: 0 0 10px 10px;
+    transition-duration: 0.5s;
+}
+
+.texto {
+    height: 15vh;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+}
+
+label {
+    font-size: 18px;
+}
+
+.marcar {
+    margin: 3vh;
+}
+
+.marcar img {
+    width: 6vh;
+    cursor: pointer;
+}
+
+#opcoes {
+    display: none;
+    justify-content: space-evenly;
+}
+
+.ticarTarefa {
+    text-decoration: line-through;
+    color: gray;
+}
+#tarefas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#tarefas li {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.671);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 15px;
+    margin: 0;
+    cursor: grab;
+    transition-duration: 0.5s;
+}
+
+.fechar{
+    float: right;
+    cursor: pointer;
+    width: 32px;
+    filter: grayscale();
+}
+
+#tarefas li span {
+    display: flex;
+    align-items: center;
+}
+
+.fechar:hover {
+    filter: none;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+#tarefas li:hover {
+    background-color: #b97af857;
+}
+
+#btn:hover {
+    background-color: #5702ac;
+    transition-duration: 0.5s;
+}
+
+@media (min-width: 600px) {
+    .container {
+        width: 50vw;
+    }
+}
